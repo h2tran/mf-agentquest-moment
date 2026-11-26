@@ -5,4 +5,5 @@ const ENTRY = "Today's smallest quest: I untangled the GitHub login for h2tran, 
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "out";
 mkdirSync(outDir, { recursive: true });
+// Write the entry exactly as-is, no trailing newline.
 writeFileSync(join(outDir, "entry.txt"), ENTRY, "utf8");
